@@ -14,4 +14,6 @@ while True:
   time.sleep(0.1)
   num += 1
   if is_prime(num) == True:
-      print(str(num))
+      file1 = open("numbers.txt", "a")  # append mode
+      file1.write(str(num) + "/n")
+      file1.close()
